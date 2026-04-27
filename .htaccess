@@ -1,0 +1,31 @@
+RewriteEngine On
+
+# Forzar HTTPS (Hostinger setea HTTPS=on detrás del proxy).
+<IfModule mod_rewrite.c>
+    RewriteCond %{HTTPS} !=on
+    RewriteCond %{HTTP:X-Forwarded-Proto} !=https
+    RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [R=301,L]
+</IfModule>
+
+<FilesMatch "^(config\.php|config\.example\.php|\.gitignore|\.env|composer\.json|composer\.lock)$">
+    Require all denied
+</FilesMatch>
+
+RewriteRule ^lib/           - [F,L]
+RewriteRule ^migrations/    - [F,L]
+RewriteRule ^components/    - [F,L]
+RewriteRule ^uploads/logs/  - [F,L]
+
+<IfModule mod_headers.c>
+    Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains"
+    Header set X-Frame-Options "SAMEORIGIN"
+    Header set X-Content-Type-Options "nosniff"
+    Header set Referrer-Policy "strict-origin-when-cross-origin"
+    Header set Permissions-Policy "geolocation=(), microphone=(), camera=()"
+</IfModule>
+
+<IfModule mod_rewrite.c>
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule ^(.*)$ index.php [QSA,L]
+</IfModule>

@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>INGCON — Ingeniería y Cálculo Estructural | Alexis Bello · Pucón, Villarrica</title>
+  <meta name="description" content="INGCON — ingeniería estructural y cálculo. Proyectos técnicos, cálculos estructurales y asesorías especializadas para arquitectos, constructoras y propietarios." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="brand-page">
+
+  <div class="topbar">
+    <div class="topbar__inner">
+      <span class="topbar__item"><i class="fa-solid fa-location-dot"></i> Pucón · Villarrica · La Araucanía</span>
+      <div class="topbar__right">
+        <a href="tel:+56912345678" class="topbar__link"><i class="fa-solid fa-phone"></i> +56 9 1234 5678</a>
+        <a href="mailto:contacto@alexisbello.cl" class="topbar__link"><i class="fa-solid fa-envelope"></i> contacto@alexisbello.cl</a>
+      </div>
+    </div>
+  </div>
+
+  <nav class="nav is-scrolled" id="nav" role="navigation" aria-label="Navegación principal">
+    <div class="nav__container nav__container--centered">
+      <ul class="nav__menu nav__menu--left" role="list">
+        <li><a href="index.html#nosotros" class="nav__link">Nosotros</a></li>
+        <li><a href="index.html#servicios" class="nav__link">Servicios</a></li>
+        <li><a href="index.html#proyectos" class="nav__link">Proyectos</a></li>
+      </ul>
+      <a href="index.html" class="nav__logo-wrap" aria-label="Inicio">
+        <img src="assets/img/logo.png" alt="Logo" class="nav__logo-img" width="72" height="72" />
+      </a>
+      <ul class="nav__menu nav__menu--right" role="list">
+        <li><a href="proinca.html" class="nav__link">PROINCA</a></li>
+        <li><a href="ingcon.html" class="nav__link nav__link--active">INGCON</a></li>
+        <li><a href="index.html#contacto" class="nav__cta btn btn--sm btn--outline-light">Contactar</a></li>
+      </ul>
+      <button class="nav__toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- BRAND HERO -->
+  <header class="brand-hero brand-hero--ingcon" style="--brand-hero-bg: url('https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1800&q=85&auto=format&fit=crop');">
+    <div class="brand-hero__inner">
+
+      <div class="brand-hero__info" data-animate="fade-right">
+        <nav class="brand-hero__crumbs" aria-label="Migas">
+          <a href="index.html">Inicio</a><span>/</span>Marcas<span>/</span>INGCON
+        </nav>
+        <span class="brand-hero__kind">02 — Ingeniería</span>
+        <h1 class="brand-hero__name">INGCON</h1>
+        <p class="brand-hero__tagline">
+          Línea de ingeniería y cálculo estructural. Desarrollamos proyectos
+          técnicos, cálculos y asesorías especializadas para arquitectos,
+          constructoras y propietarios.
+        </p>
+        <ul class="brand-hero__chips">
+          <li>Cálculo estructural</li>
+          <li>Diseño estructural</li>
+          <li>Ingeniería de proyectos</li>
+          <li>Asesoría técnica</li>
+          <li>Regularizaciones</li>
+        </ul>
+      </div>
+
+      <aside class="brand-hero__form-card" data-animate="fade-left">
+        <h2 class="brand-hero__form-title">Consulta técnica</h2>
+        <p class="brand-hero__form-sub">Completa el formulario y un ingeniero INGCON te responderá en menos de 24 h.</p>
+        <form class="brand-hero__form" id="ingconForm" novalidate>
+          <div class="form__group">
+            <label for="iNombre" class="form__label">Nombre</label>
+            <input id="iNombre" name="nombre" type="text" class="form__input" placeholder="Tu nombre" required autocomplete="name" />
+          </div>
+          <div class="form__group">
+            <label for="iTel" class="form__label">Teléfono</label>
+            <input id="iTel" name="telefono" type="tel" class="form__input" placeholder="+56 9 XXXX XXXX" required autocomplete="tel" />
+          </div>
+          <div class="form__group">
+            <label for="iEmail" class="form__label">Correo</label>
+            <input id="iEmail" name="email" type="email" class="form__input" placeholder="tu@correo.cl" required autocomplete="email" />
+          </div>
+          <div class="form__group">
+            <label for="iTipo" class="form__label">Tipo de servicio</label>
+            <select id="iTipo" name="tipo" class="form__select">
+              <option value="calculo">Cálculo estructural</option>
+              <option value="diseno">Diseño estructural</option>
+              <option value="ingenieria">Ingeniería de proyecto</option>
+              <option value="asesoria">Asesoría técnica</option>
+              <option value="regularizacion">Regularización</option>
+            </select>
+          </div>
+          <div class="form__group">
+            <label for="iMensaje" class="form__label">Mensaje</label>
+            <textarea id="iMensaje" name="mensaje" class="form__textarea" rows="3" placeholder="Cuéntanos sobre el proyecto..."></textarea>
+          </div>
+          <button type="submit" class="brand-hero__form-submit">Solicitar consulta</button>
+        </form>
+      </aside>
+
+    </div>
+  </header>
+
+  <!-- FEATURES -->
+  <section class="section" aria-labelledby="ingcon-features">
+    <div class="container">
+      <div class="section__header section__header--center" data-animate="fade-up">
+        <p class="section__eyebrow">Características</p>
+        <h2 class="section__title" id="ingcon-features">Por qué elegir <em>INGCON</em></h2>
+      </div>
+
+      <div class="brand-features brand-features--ingcon" data-animate="fade-up" data-delay="100">
+        <div class="brand-features__item">
+          <div class="brand-features__icon"><i class="fa-solid fa-compass-drafting"></i></div>
+          <h3 class="brand-features__title">Cálculo normado</h3>
+          <p class="brand-features__text">Memorias y planos bajo normativa chilena vigente (NCh 433, 430, 427, 2369, entre otras).</p>
+        </div>
+        <div class="brand-features__item">
+          <div class="brand-features__icon"><i class="fa-solid fa-cubes-stacked"></i></div>
+          <h3 class="brand-features__title">Hormigón, acero y madera</h3>
+          <p class="brand-features__text">Diseño estructural en los tres materiales, con criterios de economía, durabilidad y constructibilidad.</p>
+        </div>
+        <div class="brand-features__item">
+          <div class="brand-features__icon"><i class="fa-solid fa-file-signature"></i></div>
+          <h3 class="brand-features__title">Memoria de cálculo completa</h3>
+          <p class="brand-features__text">Documentación técnica entregable para permisos municipales y revisores independientes.</p>
+        </div>
+        <div class="brand-features__item">
+          <div class="brand-features__icon"><i class="fa-solid fa-arrows-to-dot"></i></div>
+          <h3 class="brand-features__title">Coordinación multidisciplinaria</h3>
+          <p class="brand-features__text">Trabajo directo con arquitectura, mecánica de suelos e instalaciones para evitar interferencias.</p>
+        </div>
+        <div class="brand-features__item">
+          <div class="brand-features__icon"><i class="fa-solid fa-stamp"></i></div>
+          <h3 class="brand-features__title">Firma de profesional</h3>
+          <p class="brand-features__text">Planos y memorias firmados por Ingeniero Civil Calculista, listos para trámite municipal.</p>
+        </div>
+        <div class="brand-features__item">
+          <div class="brand-features__icon"><i class="fa-solid fa-magnifying-glass-chart"></i></div>
+          <h3 class="brand-features__title">Revisiones y peritajes</h3>
+          <p class="brand-features__text">Informes técnicos, segundas opiniones y evaluación de patologías estructurales existentes.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESS -->
+  <section class="section" style="background: var(--fog);" aria-labelledby="ingcon-process">
+    <div class="container">
+      <div class="section__header section__header--center" data-animate="fade-up">
+        <p class="section__eyebrow">Proceso</p>
+        <h2 class="section__title" id="ingcon-process">Cómo <em>trabajamos</em></h2>
+      </div>
+      <div class="brand-process" data-animate="fade-up">
+        <div class="brand-process__step">
+          <span class="brand-process__num">01</span>
+          <h3 class="brand-process__title">Recepción de antecedentes</h3>
+          <p class="brand-process__text">Planos de arquitectura, informe de mecánica de suelos y requisitos del proyecto.</p>
+        </div>
+        <div class="brand-process__step">
+          <span class="brand-process__num">02</span>
+          <h3 class="brand-process__title">Anteproyecto estructural</h3>
+          <p class="brand-process__text">Propuesta de sistema estructural y predimensionamiento para validación.</p>
+        </div>
+        <div class="brand-process__step">
+          <span class="brand-process__num">03</span>
+          <h3 class="brand-process__title">Cálculo y planos</h3>
+          <p class="brand-process__text">Desarrollo de memoria, modelación estructural y planos de detalle.</p>
+        </div>
+        <div class="brand-process__step">
+          <span class="brand-process__num">04</span>
+          <h3 class="brand-process__title">Entrega y seguimiento</h3>
+          <p class="brand-process__text">Firma, entrega al mandante y acompañamiento durante la ejecución.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer" role="contentinfo">
+    <div class="footer__top">
+      <div class="container">
+        <div class="footer__grid">
+          <div class="footer__brand">
+            <div class="footer__brand-name">ALEXIS BELLO</div>
+            <div class="footer__brand-role">Ingeniero Civil · Calculista</div>
+            <p class="footer__brand-desc">
+              Ingeniería estructural y construcción de alto nivel en Pucón,
+              Villarrica y La Araucanía.
+            </p>
+            <div class="footer__brands">
+              <span class="footer__brand-tag footer__brand-tag--proinca">PROINCA</span>
+              <span class="footer__brand-tag footer__brand-tag--ingcon">INGCON</span>
+            </div>
+          </div>
+          <div class="footer__col">
+            <h4 class="footer__col-title">Navegación</h4>
+            <ul class="footer__links" role="list">
+              <li><a href="index.html" class="footer__link">Inicio</a></li>
+              <li><a href="proinca.html" class="footer__link">PROINCA</a></li>
+              <li><a href="ingcon.html" class="footer__link">INGCON</a></li>
+              <li><a href="index.html#servicios" class="footer__link">Servicios</a></li>
+              <li><a href="index.html#contacto" class="footer__link">Contacto</a></li>
+            </ul>
+          </div>
+          <div class="footer__col">
+            <h4 class="footer__col-title">INGCON</h4>
+            <ul class="footer__links" role="list">
+              <li><a href="ingcon.html" class="footer__link">Cálculo estructural</a></li>
+              <li><a href="ingcon.html" class="footer__link">Diseño estructural</a></li>
+              <li><a href="ingcon.html" class="footer__link">Ingeniería de proyecto</a></li>
+              <li><a href="ingcon.html" class="footer__link">Regularizaciones</a></li>
+            </ul>
+          </div>
+          <div class="footer__col">
+            <h4 class="footer__col-title">Contacto</h4>
+            <ul class="footer__links footer__links--contact" role="list">
+              <li><a href="https://wa.me/56912345678" target="_blank" rel="noopener noreferrer" class="footer__link footer__link--icon"><i class="fa-brands fa-whatsapp"></i> +56 9 1234 5678</a></li>
+              <li><a href="mailto:contacto@alexisbello.cl" class="footer__link footer__link--icon"><i class="fa-solid fa-envelope"></i> contacto@alexisbello.cl</a></li>
+              <li class="footer__link footer__link--icon footer__link--plain"><i class="fa-solid fa-location-dot"></i> Pucón, La Araucanía</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="container">
+        <div class="footer__bottom-inner">
+          <p class="footer__copy">&copy; 2024 Alexis Bello — PROINCA · INGCON.</p>
+          <p class="footer__legal">Ingeniero Civil Calculista · Pucón, Villarrica, Región de La Araucanía, Chile</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/56912345678?text=Hola%20Alexis%2C%20me%20interesa%20un%20proyecto%20INGCON." class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+    <span class="whatsapp-float__tooltip">¿Necesitas ayuda?</span>
+  </a>
+
+  <script src="js/main.js"></script>
+  <script src="js/dev-panel.js"></script>
+</body>
+</html>

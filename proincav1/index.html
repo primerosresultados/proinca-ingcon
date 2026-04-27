@@ -1,0 +1,835 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO Meta -->
+  <title>Alexis Bello | Ingeniería y Construcción — PROINCA · INGCON | Pucón, Villarrica</title>
+  <meta name="description" content="Ingeniero Civil Calculista en Pucón y Villarrica. Servicios de ingeniería estructural, cálculo de proyectos y construcción a través de PROINCA e INGCON en La Araucanía." />
+  <meta name="keywords" content="ingeniero calculista Pucón, cálculo estructural Villarrica, ingeniería estructural La Araucanía, empresa construcción Pucón, servicios ingeniería Villarrica, PROINCA, INGCON, Alexis Bello" />
+  <meta name="author" content="Alexis Bello" />
+  <meta name="robots" content="index, follow" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Alexis Bello | Ingeniería y Construcción — Pucón, Villarrica" />
+  <meta property="og:description" content="Ingeniero Civil Calculista con dos líneas especializadas: PROINCA (construcción) e INGCON (ingeniería estructural). Pucón, Villarrica y La Araucanía." />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="es_CL" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ============================================================
+       NAVEGACIÓN
+       Future: WordPress: wp_nav_menu() + sticky header plugin
+  ============================================================ -->
+  <!-- Topbar -->
+  <div class="topbar">
+    <div class="topbar__inner">
+      <span class="topbar__item"><i class="fa-solid fa-location-dot"></i> Pucón · Villarrica · La Araucanía</span>
+      <div class="topbar__right">
+        <a href="tel:+56912345678" class="topbar__link"><i class="fa-solid fa-phone"></i> +56 9 1234 5678</a>
+        <a href="mailto:contacto@alexisbello.cl" class="topbar__link"><i class="fa-solid fa-envelope"></i> contacto@alexisbello.cl</a>
+      </div>
+    </div>
+  </div>
+
+  <nav class="nav" id="nav" role="navigation" aria-label="Navegación principal">
+    <div class="nav__container nav__container--centered">
+
+      <!-- Links izquierda -->
+      <ul class="nav__menu nav__menu--left" role="list">
+        <li><a href="#nosotros" class="nav__link">Nosotros</a></li>
+        <li><a href="#servicios" class="nav__link">Servicios</a></li>
+      </ul>
+
+      <!-- Logo centrado -->
+      <a href="#inicio" class="nav__logo-wrap" aria-label="PROINCA — Inicio">
+        <img
+          src="assets/img/logo.png"
+          alt="PROINCA Logo"
+          class="nav__logo-img"
+          width="72"
+          height="72"
+        />
+      </a>
+
+      <!-- Links derecha + toggle mobile -->
+      <ul class="nav__menu nav__menu--right" role="list">
+        <li><a href="#cobertura" class="nav__link">Cobertura</a></li>
+        <li><a href="#marcas" class="nav__link">Marcas</a></li>
+        <li><a href="#contacto" class="nav__cta btn btn--sm btn--outline-light">Contactar</a></li>
+      </ul>
+
+      <button class="nav__toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+    </div>
+  </nav>
+
+  <!-- ============================================================
+       HERO
+       Future: WordPress: ACF fields for hero text, image, CTAs
+  ============================================================ -->
+  <header class="hero" id="inicio" role="banner">
+    <div class="hero__bg" aria-hidden="true">
+      <img
+        src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=1920&q=85&auto=format&fit=crop"
+        alt=""
+        class="hero__bg-img"
+        fetchpriority="high"
+      />
+      <div class="hero__overlay"></div>
+    </div>
+
+    <div class="hero__body">
+      <div class="hero__center" data-animate="fade-up">
+        <div class="hero__brands">
+          <span class="hero__brand hero__brand--proinca">PROINCA</span>
+          <span class="hero__brand-sep">·</span>
+          <span class="hero__brand hero__brand--ingcon">INGCON</span>
+        </div>
+
+        <h1 class="hero__title">
+          Ingeniería y Construcción<br />
+          <em>con Precisión Técnica</em>
+        </h1>
+
+
+        <p class="hero__subtitle">
+          Servicios de ingeniería estructural, cálculo y construcción profesional<br class="hero__br" />
+          en Pucón, Villarrica y La Araucanía.
+        </p>
+
+        <div class="hero__ctas">
+          <a href="#contacto" class="btn btn--proinca-hero">
+            Cotizar proyecto
+            <i class="fa-solid fa-arrow-right btn__icon" aria-hidden="true"></i>
+          </a>
+          <a href="#servicios" class="btn btn--ghost-hero">
+            Ver servicios
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Stats bar -->
+    <div class="hero__bar">
+      <div class="hero__bar-inner">
+        <div class="hero__bar-identity">
+          <strong>Alexis Bello</strong>
+          <span>Ingeniero Civil · Calculista</span>
+        </div>
+        <div class="hero__bar-stats">
+          <div class="hero__bar-stat">
+            <span class="hero__bar-num">10+</span>
+            <span class="hero__bar-label">Años</span>
+          </div>
+          <div class="hero__bar-stat">
+            <span class="hero__bar-num">150+</span>
+            <span class="hero__bar-label">Proyectos</span>
+          </div>
+          <div class="hero__bar-stat">
+            <span class="hero__bar-num">100%</span>
+            <span class="hero__bar-label">Normativa</span>
+          </div>
+        </div>
+        <a href="#contacto" class="hero__bar-cta">
+          <i class="fa-brands fa-whatsapp"></i>
+          Solicitar consulta
+        </a>
+      </div>
+    </div>
+  </header>
+
+
+  <!-- ============================================================
+       SERVICIOS
+       Future: WordPress: ACF repeater for services
+  ============================================================ -->
+  <section class="section section--services svc" id="servicios" aria-labelledby="services-title">
+    <div class="container">
+      <div class="section__header section__header--center" data-animate="fade-up">
+        <p class="section__eyebrow">Nuestros servicios</p>
+        <h2 class="section__title" id="services-title" style="max-width: 760px; margin-inline: auto;">
+          Soluciones integrales<br /><em>de ingeniería y construcción</em>
+        </h2>
+      </div>
+    </div>
+
+    <div class="svc__showcase" data-animate="fade-up" data-delay="100">
+      <div class="svc__showcase-inner">
+
+        <!-- Lista de servicios (PROINCA · compartidos · INGCON) -->
+        <div class="svc__list" role="tablist">
+
+          <button class="svc__item is-active" data-svc="construccion" role="tab" aria-selected="true">
+            <span class="svc__num">01</span>
+            <span class="svc__title">Construcción</span>
+            <span class="svc__brand svc__brand--proinca">PROINCA</span>
+            <span class="svc__arrow"><i class="fa-solid fa-arrow-right"></i></span>
+          </button>
+
+          <button class="svc__item" data-svc="supervision" role="tab" aria-selected="false">
+            <span class="svc__num">02</span>
+            <span class="svc__title">Supervisión de Obras</span>
+            <span class="svc__brand svc__brand--proinca">PROINCA</span>
+            <span class="svc__arrow"><i class="fa-solid fa-arrow-right"></i></span>
+          </button>
+
+          <button class="svc__item" data-svc="ingenieria-proyectos" role="tab" aria-selected="false">
+            <span class="svc__num">03</span>
+            <span class="svc__title">Ingeniería de Proyectos</span>
+            <span class="svc__brand svc__brand--both">PROINCA · INGCON</span>
+            <span class="svc__arrow"><i class="fa-solid fa-arrow-right"></i></span>
+          </button>
+
+          <button class="svc__item" data-svc="regularizaciones" role="tab" aria-selected="false">
+            <span class="svc__num">04</span>
+            <span class="svc__title">Regularizaciones</span>
+            <span class="svc__brand svc__brand--both">PROINCA · INGCON</span>
+            <span class="svc__arrow"><i class="fa-solid fa-arrow-right"></i></span>
+          </button>
+
+          <button class="svc__item" data-svc="calculo" role="tab" aria-selected="false">
+            <span class="svc__num">05</span>
+            <span class="svc__title">Cálculo Estructural</span>
+            <span class="svc__brand svc__brand--ingcon">INGCON</span>
+            <span class="svc__arrow"><i class="fa-solid fa-arrow-right"></i></span>
+          </button>
+
+          <button class="svc__item" data-svc="asesoria" role="tab" aria-selected="false">
+            <span class="svc__num">06</span>
+            <span class="svc__title">Asesoría Técnica</span>
+            <span class="svc__brand svc__brand--ingcon">INGCON</span>
+            <span class="svc__arrow"><i class="fa-solid fa-arrow-right"></i></span>
+          </button>
+
+        </div>
+
+        <!-- Preview (imagen + descripción) -->
+        <div class="svc__preview" role="tabpanel">
+
+          <div class="svc__panel is-active" data-svc="construccion">
+            <div class="svc__panel-media">
+              <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1400&q=85&auto=format&fit=crop" alt="Construcción" loading="lazy" />
+            </div>
+            <div class="svc__panel-body">
+              <p class="svc__panel-eyebrow">01 / PROINCA</p>
+              <h3 class="svc__panel-title">Construcción</h3>
+              <p class="svc__panel-text">Ejecución de obras civiles completas — fundaciones, estructura, terminaciones e instalaciones — con control riguroso de calidad, plazos y costos en cada etapa.</p>
+            </div>
+          </div>
+
+          <div class="svc__panel" data-svc="supervision">
+            <div class="svc__panel-media">
+              <img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=1400&q=85&auto=format&fit=crop" alt="Supervisión de obras" loading="lazy" />
+            </div>
+            <div class="svc__panel-body">
+              <p class="svc__panel-eyebrow">02 / PROINCA</p>
+              <h3 class="svc__panel-title">Supervisión de Obras</h3>
+              <p class="svc__panel-text">Inspección técnica y supervisión profesional en terreno para garantizar cumplimiento de plazos, costos, calidad y normativa.</p>
+            </div>
+          </div>
+
+          <div class="svc__panel" data-svc="ingenieria-proyectos">
+            <div class="svc__panel-media">
+              <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1400&q=85&auto=format&fit=crop" alt="Ingeniería de proyectos" loading="lazy" />
+            </div>
+            <div class="svc__panel-body">
+              <p class="svc__panel-eyebrow">03 / PROINCA · INGCON</p>
+              <h3 class="svc__panel-title">Ingeniería de Proyectos</h3>
+              <p class="svc__panel-text">Desarrollo integral de proyectos de edificación, infraestructura y obras industriales. Coordinación multidisciplinaria desde anteproyecto hasta entrega.</p>
+            </div>
+          </div>
+
+          <div class="svc__panel" data-svc="regularizaciones">
+            <div class="svc__panel-media">
+              <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=1400&q=85&auto=format&fit=crop" alt="Regularizaciones" loading="lazy" />
+            </div>
+            <div class="svc__panel-body">
+              <p class="svc__panel-eyebrow">04 / PROINCA · INGCON</p>
+              <h3 class="svc__panel-title">Regularizaciones</h3>
+              <p class="svc__panel-text">Gestión completa ante la DOM — regularización de construcciones existentes, subsanación de observaciones y obtención de permisos.</p>
+            </div>
+          </div>
+
+          <div class="svc__panel" data-svc="calculo">
+            <div class="svc__panel-media">
+              <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=1400&q=85&auto=format&fit=crop" alt="Cálculo estructural" loading="lazy" />
+            </div>
+            <div class="svc__panel-body">
+              <p class="svc__panel-eyebrow">05 / INGCON</p>
+              <h3 class="svc__panel-title">Cálculo Estructural</h3>
+              <p class="svc__panel-text">Diseño y cálculo de estructuras de hormigón armado, acero y madera bajo normativa chilena vigente (NCh 433, 430, 427, 2369). Memoria de cálculo y planos firmados.</p>
+            </div>
+          </div>
+
+          <div class="svc__panel" data-svc="asesoria">
+            <div class="svc__panel-media">
+              <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=1400&q=85&auto=format&fit=crop" alt="Asesoría técnica" loading="lazy" />
+            </div>
+            <div class="svc__panel-body">
+              <p class="svc__panel-eyebrow">06 / INGCON</p>
+              <h3 class="svc__panel-title">Asesoría Técnica</h3>
+              <p class="svc__panel-text">Revisión de proyectos, informes de patologías estructurales, peritajes técnicos y segundas opiniones profesionales.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="services__cta" data-animate="fade-up" data-delay="200">
+        <a href="#contacto" class="btn btn--primary">
+          Consultar por un servicio
+          <i class="fa-solid fa-arrow-right btn__icon" aria-hidden="true"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       SPLIT SECTION — PROINCA / INGCON
+       Future: WordPress: Custom post types for each brand
+  ============================================================ -->
+  <section class="section section--brands" id="marcas" aria-labelledby="brands-title">
+    <div class="container">
+      <div class="section__header section__header--center" data-animate="fade-up">
+        <p class="section__eyebrow">Dos líneas. Un mismo criterio profesional.</p>
+        <h2 class="section__title" id="brands-title">
+          Nuestras <em>Marcas</em>
+        </h2>
+      </div>
+    </div>
+
+    <div class="brands__slab" data-animate="fade-up">
+
+      <!-- PROINCA -->
+      <article class="brands__col brands__col--proinca" id="proinca">
+        <div class="brands__col-media" aria-hidden="true">
+          <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=900&q=85&auto=format&fit=crop" alt="" loading="lazy" />
+        </div>
+        <div class="brands__col-inner">
+          <div class="brands__col-head">
+            <span class="brands__col-num">01</span>
+            <span class="brands__col-kind">Construcción</span>
+          </div>
+          <h3 class="brands__col-name">PROINCA</h3>
+          <p class="brands__col-tagline">Proyectos · Ejecución · Resultados</p>
+          <p class="brands__col-text">
+            Línea de construcción. Ejecutamos proyectos habitacionales y
+            comerciales con supervisión técnica profesional, gestión en terreno
+            y control riguroso de calidad y plazos.
+          </p>
+          <ul class="brands__col-chips">
+            <li>Construcción habitacional</li>
+            <li>Construcción comercial</li>
+            <li>Supervisión técnica</li>
+            <li>Dirección de proyectos</li>
+            <li>Remodelaciones</li>
+          </ul>
+          <a href="proinca.html" class="brands__col-link">
+            <span>Ver PROINCA</span>
+            <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+          </a>
+        </div>
+      </article>
+
+      <!-- INGCON -->
+      <article class="brands__col brands__col--ingcon" id="ingcon">
+        <div class="brands__col-media" aria-hidden="true">
+          <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=900&q=85&auto=format&fit=crop" alt="" loading="lazy" />
+        </div>
+        <div class="brands__col-inner">
+          <div class="brands__col-head">
+            <span class="brands__col-num">02</span>
+            <span class="brands__col-kind">Ingeniería</span>
+          </div>
+          <h3 class="brands__col-name">INGCON</h3>
+          <p class="brands__col-tagline">Cálculo · Diseño · Certeza Técnica</p>
+          <p class="brands__col-text">
+            Línea de ingeniería y cálculo estructural. Desarrollamos proyectos
+            técnicos, cálculos y asesorías especializadas para arquitectos,
+            constructoras y propietarios.
+          </p>
+          <ul class="brands__col-chips">
+            <li>Cálculo estructural</li>
+            <li>Diseño estructural</li>
+            <li>Ingeniería de proyectos</li>
+            <li>Asesoría técnica</li>
+            <li>Regularizaciones</li>
+          </ul>
+          <a href="ingcon.html" class="brands__col-link">
+            <span>Ver INGCON</span>
+            <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+          </a>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+
+
+  <!-- ============================================================
+       COBERTURA / SEO LOCAL
+       Future: WordPress: ACF for regions / map embed
+  ============================================================ -->
+  <section class="section section--coverage section--dark" id="cobertura" aria-labelledby="coverage-title">
+    <div class="coverage__bg" aria-hidden="true">
+      <img
+        src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1600&q=80&auto=format&fit=crop"
+        alt=""
+        class="coverage__bg-img"
+        loading="lazy"
+      />
+      <div class="coverage__overlay"></div>
+    </div>
+    <div class="container">
+      <div class="coverage__grid">
+        <div class="coverage__content" data-animate="fade-right">
+          <p class="section__eyebrow section__eyebrow--light">Zona de cobertura</p>
+          <h2 class="section__title section__title--light" id="coverage-title">
+            Presencia local.<br /><em>Conocimiento del territorio.</em>
+          </h2>
+          <p class="coverage__text">
+            Trabajamos con proyectos en Pucón, Villarrica y todas las comunas
+            de la zona lacustre y precordillerana de La Araucanía.
+            Conocemos las condiciones del suelo, la normativa municipal local
+            y los requerimientos técnicos específicos de esta región.
+          </p>
+          <p class="coverage__text">
+            El territorio del sur de Chile tiene características sísmicas,
+            geológicas y climáticas particulares que requieren criterio técnico
+            especializado. Esa experiencia local es parte de nuestro diferencial.
+          </p>
+          <a href="#contacto" class="btn btn--light mt-lg">
+            Consultar disponibilidad <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+          </a>
+        </div>
+
+        <div class="coverage__zones" data-animate="fade-left">
+          <h3 class="coverage__zones-title">Comunas de cobertura</h3>
+          <div class="coverage__zones-grid">
+            <button type="button" class="coverage__zone coverage__zone--primary" data-location="pucon">
+              <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+              <div>
+                <strong>Pucón</strong>
+                <span>Cobertura principal</span>
+              </div>
+            </button>
+            <button type="button" class="coverage__zone coverage__zone--primary" data-location="villarrica">
+              <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+              <div>
+                <strong>Villarrica</strong>
+                <span>Cobertura principal</span>
+              </div>
+            </button>
+            <button type="button" class="coverage__zone" data-location="cunco">
+              <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+              <div>
+                <strong>Cunco</strong>
+                <span>Cobertura regular</span>
+              </div>
+            </button>
+            <button type="button" class="coverage__zone" data-location="loncoche">
+              <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+              <div>
+                <strong>Loncoche</strong>
+                <span>Cobertura regular</span>
+              </div>
+            </button>
+            <button type="button" class="coverage__zone" data-location="freire">
+              <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+              <div>
+                <strong>Freire</strong>
+                <span>Cobertura regular</span>
+              </div>
+            </button>
+            <button type="button" class="coverage__zone" data-location="araucania">
+              <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+              <div>
+                <strong>Toda La Araucanía</strong>
+                <span>Consultar disponibilidad</span>
+              </div>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       CONTACTO
+       Future: WordPress: Contact Form 7 / Gravity Forms + AJAX
+  ============================================================ -->
+  <section class="section section--contact" id="contacto" aria-labelledby="contact-title">
+    <div class="container">
+      <div class="contact__grid">
+
+        <div class="contact__info" data-animate="fade-right">
+          <p class="section__eyebrow">Hablemos</p>
+          <h2 class="section__title" id="contact-title">
+            ¿Tienes un<br /><em>proyecto en mente?</em>
+          </h2>
+          <p class="contact__lead">
+            Cuéntanos en qué consiste tu proyecto. Respondemos dentro de las
+            24 horas hábiles con una evaluación inicial sin costo.
+          </p>
+
+          <div class="contact__details">
+            <div class="contact__detail">
+              <div class="contact__detail-icon">
+                <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+              </div>
+              <div class="contact__detail-body">
+                <span class="contact__detail-label">WhatsApp directo</span>
+                <a
+                  href="https://wa.me/56912345678?text=Hola%20Alexis%2C%20me%20interesa%20consultar%20sobre%20un%20proyecto%20de%20ingenier%C3%ADa%2Fconstrucci%C3%B3n%20en%20Puc%C3%B3n%2FVillarrica.%20%C2%BFPodr%C3%ADamos%20conversar%3F"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="contact__detail-value contact__detail-value--link"
+                >
+                  +56 9 1234 5678
+                </a>
+              </div>
+            </div>
+            <div class="contact__detail">
+              <div class="contact__detail-icon">
+                <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+              </div>
+              <div class="contact__detail-body">
+                <span class="contact__detail-label">Correo electrónico</span>
+                <a href="mailto:contacto@alexisbello.cl" class="contact__detail-value contact__detail-value--link">
+                  contacto@alexisbello.cl
+                </a>
+              </div>
+            </div>
+            <div class="contact__detail">
+              <div class="contact__detail-icon">
+                <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+              </div>
+              <div class="contact__detail-body">
+                <span class="contact__detail-label">Ubicación</span>
+                <span class="contact__detail-value">Pucón, Región de La Araucanía, Chile</span>
+              </div>
+            </div>
+          </div>
+
+          <a
+            href="https://wa.me/56912345678?text=Hola%20Alexis%2C%20me%20interesa%20consultar%20sobre%20un%20proyecto%20de%20ingenier%C3%ADa%2Fconstrucci%C3%B3n%20en%20Puc%C3%B3n%2FVillarrica.%20%C2%BFPodr%C3%ADamos%20conversar%3F"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn btn--whatsapp contact__whatsapp-btn"
+          >
+            <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+            Escribir por WhatsApp
+          </a>
+        </div>
+
+        <div class="contact__form-wrap" data-animate="fade-left">
+          <!-- Future: WordPress: Replace <form> with Contact Form 7 shortcode [contact-form-7] -->
+          <form class="contact__form" id="contactForm" novalidate aria-label="Formulario de contacto">
+            <div class="form__row">
+              <div class="form__group">
+                <label for="nombre" class="form__label">Nombre completo <span aria-hidden="true">*</span></label>
+                <input type="text" id="nombre" name="nombre" class="form__input" placeholder="Tu nombre" required autocomplete="name" />
+              </div>
+              <div class="form__group">
+                <label for="telefono" class="form__label">Teléfono <span aria-hidden="true">*</span></label>
+                <input type="tel" id="telefono" name="telefono" class="form__input" placeholder="+56 9 XXXX XXXX" required autocomplete="tel" />
+              </div>
+            </div>
+            <div class="form__row">
+              <div class="form__group">
+                <label for="email" class="form__label">Correo electrónico <span aria-hidden="true">*</span></label>
+                <input type="email" id="email" name="email" class="form__input" placeholder="tu@correo.cl" required autocomplete="email" />
+              </div>
+              <div class="form__group">
+                <label for="ciudad" class="form__label">Ciudad</label>
+                <input type="text" id="ciudad" name="ciudad" class="form__input" placeholder="Pucón, Villarrica..." autocomplete="address-level2" />
+              </div>
+            </div>
+            <div class="form__group">
+              <label for="servicio" class="form__label">Tipo de proyecto</label>
+              <select id="servicio" name="servicio" class="form__select">
+                <option value="" disabled selected>Selecciona una categoría...</option>
+                <optgroup label="PROINCA — Construcción">
+                  <option value="construccion-habitacional">Construcción habitacional</option>
+                  <option value="construccion-comercial">Construcción comercial</option>
+                  <option value="supervision-obra">Supervisión técnica de obra</option>
+                  <option value="remodelacion">Remodelación o ampliación</option>
+                </optgroup>
+                <optgroup label="INGCON — Ingeniería">
+                  <option value="calculo-estructural">Cálculo estructural</option>
+                  <option value="ingenieria-proyecto">Ingeniería de proyecto</option>
+                  <option value="asesoria-tecnica">Asesoría técnica</option>
+                  <option value="regularizacion">Regularización</option>
+                </optgroup>
+                <option value="otro">Otro / No estoy seguro</option>
+              </select>
+            </div>
+            <div class="form__group">
+              <label for="mensaje" class="form__label">Mensaje</label>
+              <textarea id="mensaje" name="mensaje" class="form__textarea" rows="4" placeholder="Cuéntanos brevemente tu proyecto o consulta..."></textarea>
+            </div>
+
+            <!-- Honeypot — spam prevention -->
+            <div style="display:none" aria-hidden="true">
+              <input type="text" name="_trap" tabindex="-1" autocomplete="off" />
+            </div>
+
+            <button type="submit" class="btn btn--primary btn--full contact__submit">
+              Enviar consulta <i class="fa-solid fa-paper-plane" aria-hidden="true"></i>
+            </button>
+
+            <p class="form__note">
+              <i class="fa-solid fa-lock" aria-hidden="true"></i>
+              Tu información es privada y no será compartida con terceros.
+            </p>
+          </form>
+
+          <div class="contact__form-success" id="formSuccess" role="alert" aria-live="polite" hidden>
+            <i class="fa-solid fa-circle-check" aria-hidden="true"></i>
+            <h3>¡Mensaje enviado!</h3>
+            <p>Gracias por contactarnos. Te responderemos dentro de las próximas 24 horas hábiles.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       FOOTER
+       Future: WordPress: footer.php template + widget areas
+  ============================================================ -->
+  <footer class="footer" role="contentinfo">
+    <div class="footer__top">
+      <div class="container">
+        <div class="footer__grid">
+
+          <div class="footer__brand">
+            <div class="footer__brand-name">ALEXIS BELLO</div>
+            <div class="footer__brand-role">Ingeniero Civil · Calculista</div>
+            <p class="footer__brand-desc">
+              Ingeniería estructural y construcción de alto nivel en Pucón,
+              Villarrica y La Araucanía. Dos líneas especializadas, un mismo
+              compromiso profesional.
+            </p>
+            <div class="footer__brands">
+              <span class="footer__brand-tag footer__brand-tag--proinca">PROINCA</span>
+              <span class="footer__brand-tag footer__brand-tag--ingcon">INGCON</span>
+            </div>
+          </div>
+
+          <div class="footer__col">
+            <h4 class="footer__col-title">Navegación</h4>
+            <ul class="footer__links" role="list">
+              <li><a href="#nosotros" class="footer__link">Nosotros</a></li>
+              <li><a href="#marcas" class="footer__link">PROINCA</a></li>
+              <li><a href="#marcas" class="footer__link">INGCON</a></li>
+              <li><a href="#servicios" class="footer__link">Servicios</a></li>
+              <li><a href="#contacto" class="footer__link">Contacto</a></li>
+            </ul>
+          </div>
+
+          <div class="footer__col">
+            <h4 class="footer__col-title">Servicios</h4>
+            <ul class="footer__links" role="list">
+              <li><a href="#servicios" class="footer__link">Cálculo estructural</a></li>
+              <li><a href="#servicios" class="footer__link">Ingeniería de proyectos</a></li>
+              <li><a href="#servicios" class="footer__link">Construcción</a></li>
+              <li><a href="#servicios" class="footer__link">Asesoría técnica</a></li>
+              <li><a href="#servicios" class="footer__link">Regularizaciones</a></li>
+            </ul>
+          </div>
+
+          <div class="footer__col">
+            <h4 class="footer__col-title">Contacto</h4>
+            <ul class="footer__links footer__links--contact" role="list">
+              <li>
+                <a href="https://wa.me/56912345678" target="_blank" rel="noopener noreferrer" class="footer__link footer__link--icon">
+                  <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+                  +56 9 1234 5678
+                </a>
+              </li>
+              <li>
+                <a href="mailto:contacto@alexisbello.cl" class="footer__link footer__link--icon">
+                  <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+                  contacto@alexisbello.cl
+                </a>
+              </li>
+              <li class="footer__link footer__link--icon footer__link--plain">
+                <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+                Pucón, La Araucanía
+              </li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <div class="container">
+        <div class="footer__bottom-inner">
+          <p class="footer__copy">
+            &copy; 2024 Alexis Bello — PROINCA · INGCON. Todos los derechos reservados.
+          </p>
+          <p class="footer__legal">
+            Ingeniero Civil Calculista · Pucón, Villarrica, Región de La Araucanía, Chile
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WhatsApp floating button -->
+  <a
+    href="https://wa.me/56912345678?text=Hola%20Alexis%2C%20me%20interesa%20consultar%20sobre%20un%20proyecto%20de%20ingenier%C3%ADa%2Fconstrucci%C3%B3n.%20%C2%BFPodr%C3%ADamos%20conversar%3F"
+    class="whatsapp-float"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Contactar por WhatsApp"
+  >
+    <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+    <span class="whatsapp-float__tooltip">¿Necesitas ayuda?</span>
+  </a>
+  <!-- ============================================================
+       MODAL — Lead Capture
+  ============================================================ -->
+  <div class="modal" id="contactModal" aria-hidden="true">
+    <div class="modal__backdrop" id="modalBackdrop"></div>
+    <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="modal__close" id="modalClose" aria-label="Cerrar modal">&times;</button>
+      
+      <div class="modal__content">
+        <div class="modal__header">
+          <h2 class="modal__title" id="modalTitle">Solicitar Consulta</h2>
+          <p class="modal__subtitle">Completa el formulario y te contactaremos a la brevedad.</p>
+        </div>
+
+        <form class="contact__form" id="modalForm" novalidate>
+          <div class="form__row">
+            <div class="form__group">
+              <label for="modalNombre" class="form__label">Nombre completo <span aria-hidden="true">*</span></label>
+              <input type="text" id="modalNombre" name="nombre" class="form__input" placeholder="Tu nombre" required autocomplete="name" />
+            </div>
+            <div class="form__group">
+              <label for="modalTelefono" class="form__label">Teléfono <span aria-hidden="true">*</span></label>
+              <input type="tel" id="modalTelefono" name="telefono" class="form__input" placeholder="+56 9 XXXX XXXX" required autocomplete="tel" />
+            </div>
+          </div>
+          
+          <div class="form__group">
+            <label for="modalEmail" class="form__label">Correo electrónico <span aria-hidden="true">*</span></label>
+            <input type="email" id="modalEmail" name="email" class="form__input" placeholder="tu@correo.cl" required autocomplete="email" />
+          </div>
+
+          <div class="form__group">
+            <label for="modalServicio" class="form__label">Tipo de proyecto</label>
+            <select id="modalServicio" name="servicio" class="form__select">
+              <option value="" disabled selected>Selecciona una categoría...</option>
+              <optgroup label="PROINCA — Construcción">
+                <option value="construccion-habitacional">Construcción habitacional</option>
+                <option value="construccion-comercial">Construcción comercial</option>
+                <option value="supervision-obra">Supervisión técnica de obra</option>
+              </optgroup>
+              <optgroup label="INGCON — Ingeniería">
+                <option value="calculo-estructural">Cálculo estructural</option>
+                <option value="ingenieria-proyecto">Ingeniería de proyecto</option>
+              </optgroup>
+              <option value="otro">Otro / No estoy seguro</option>
+            </select>
+          </div>
+
+          <div class="form__group">
+            <label for="modalMensaje" class="form__label">Mensaje</label>
+            <textarea id="modalMensaje" name="mensaje" class="form__textarea" rows="3" placeholder="Cuéntanos sobre tu proyecto..."></textarea>
+          </div>
+
+          <!-- Honeypot -->
+          <div style="display:none" aria-hidden="true">
+            <input type="text" name="_trap" tabindex="-1" autocomplete="off" />
+          </div>
+
+          <button type="submit" class="btn btn--primary btn--full">
+            Enviar consulta <i class="fa-solid fa-paper-plane" aria-hidden="true"></i>
+          </button>
+        </form>
+
+        <div class="contact__form-success" id="modalSuccess" role="alert" aria-live="polite" hidden>
+          <i class="fa-solid fa-circle-check" aria-hidden="true"></i>
+          <h3>¡Mensaje enviado!</h3>
+          <p>Gracias por contactarnos. Te responderemos pronto.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Location Modal -->
+  <div class="locmodal" id="locationModal" role="dialog" aria-modal="true" aria-labelledby="locmodal-title" hidden>
+    <div class="locmodal__backdrop" data-role="close"></div>
+    <div class="locmodal__dialog" role="document">
+      <button class="locmodal__close" data-role="close" aria-label="Cerrar">
+        <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+      </button>
+      <div class="locmodal__grid">
+        <div class="locmodal__info">
+          <span class="locmodal__eyebrow" data-role="tier">Cobertura</span>
+          <h3 class="locmodal__title" id="locmodal-title" data-role="name">Ubicación</h3>
+          <p class="locmodal__desc" data-role="desc"></p>
+          <ul class="locmodal__facts" data-role="facts"></ul>
+          <div class="locmodal__meta">
+            <div><i class="fa-solid fa-clock" aria-hidden="true"></i> <span data-role="response"></span></div>
+            <div><i class="fa-solid fa-road" aria-hidden="true"></i> <span data-role="distance"></span></div>
+          </div>
+        </div>
+        <form class="locmodal__form" id="locmodalForm" novalidate>
+          <h4 class="locmodal__form-title">Consultar disponibilidad</h4>
+          <input type="hidden" name="ubicacion" data-role="hidden-location" />
+          <div class="form__row">
+            <label class="form__label" for="locm-nombre">Nombre</label>
+            <input type="text" id="locm-nombre" name="nombre" class="form__input" required />
+          </div>
+          <div class="form__row">
+            <label class="form__label" for="locm-tel">Teléfono</label>
+            <input type="tel" id="locm-tel" name="telefono" class="form__input" required />
+          </div>
+          <div class="form__row">
+            <label class="form__label" for="locm-email">Correo</label>
+            <input type="email" id="locm-email" name="email" class="form__input" required />
+          </div>
+          <div class="form__row">
+            <label class="form__label" for="locm-msg">Detalle del proyecto</label>
+            <textarea id="locm-msg" name="mensaje" class="form__input form__textarea" rows="3"></textarea>
+          </div>
+          <button type="submit" class="btn btn--proinca locmodal__submit">
+            Enviar consulta <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+          </button>
+          <p class="locmodal__success" data-role="success" hidden>¡Gracias! Te contactaremos pronto.</p>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+  <script src="js/location-modal.js"></script>
+</body>
+</html>
