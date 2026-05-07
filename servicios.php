@@ -13,17 +13,17 @@ $services = [
     ['num' => '02', 'brand' => 'PROINCA', 'title' => 'Construcción comercial',     'text' => 'Locales, oficinas y obras menores comerciales. Foco en plazos, costos y normativa local.'],
     ['num' => '03', 'brand' => 'PROINCA', 'title' => 'Supervisión técnica de obra','text' => 'Inspección técnica de obra (ITO) en proyectos propios y de terceros. Control de avance, calidad y registro documental.'],
     ['num' => '04', 'brand' => 'PROINCA', 'title' => 'Dirección de proyectos',     'text' => 'Coordinación integral entre arquitectura, especialidades, mandante y municipio. Una sola interlocución.'],
-    ['num' => '05', 'brand' => 'PROINCA', 'title' => 'Remodelaciones y ampliaciones', 'text' => 'Reformas estructurales y ampliaciones con cálculo asociado. Trabajo coordinado con INGCON.'],
-    ['num' => '06', 'brand' => 'INGCON',  'title' => 'Cálculo estructural',        'text' => 'Diseño y cálculo de estructuras de hormigón armado, acero y madera. Memoria de cálculo y planos firmados conforme a NCh 433/430/427/2369.'],
-    ['num' => '07', 'brand' => 'INGCON',  'title' => 'Diseño estructural',         'text' => 'Predimensionamiento y modelación desde anteproyecto. Coordinación con arquitectura.'],
-    ['num' => '08', 'brand' => 'INGCON',  'title' => 'Ingeniería de proyectos',    'text' => 'Coordinación multidisciplinaria de especialidades hasta entrega completa de proyecto.'],
-    ['num' => '09', 'brand' => 'INGCON',  'title' => 'Asesoría técnica',           'text' => 'Revisión de proyectos de terceros, segunda opinión profesional y peritajes estructurales.'],
-    ['num' => '10', 'brand' => 'INGCON',  'title' => 'Regularizaciones',           'text' => 'Cálculo retroactivo y memoria para regularización de construcciones existentes ante la DOM.'],
-    ['num' => '11', 'brand' => 'INGCON',  'title' => 'Patologías estructurales',   'text' => 'Inspección, diagnóstico e informe técnico sobre patologías y daños en estructuras existentes.'],
+    ['num' => '05', 'brand' => 'PROINCA', 'title' => 'Remodelaciones y ampliaciones', 'text' => 'Reformas estructurales y ampliaciones con cálculo asociado. Trabajo coordinado con INGEPUCON.'],
+    ['num' => '06', 'brand' => 'INGEPUCON',  'title' => 'Cálculo estructural',        'text' => 'Diseño y cálculo de estructuras de hormigón armado, acero y madera. Memoria de cálculo y planos firmados conforme a NCh 433/430/427/2369.'],
+    ['num' => '07', 'brand' => 'INGEPUCON',  'title' => 'Diseño estructural',         'text' => 'Predimensionamiento y modelación desde anteproyecto. Coordinación con arquitectura.'],
+    ['num' => '08', 'brand' => 'INGEPUCON',  'title' => 'Ingeniería de proyectos',    'text' => 'Coordinación multidisciplinaria de especialidades hasta entrega completa de proyecto.'],
+    ['num' => '09', 'brand' => 'INGEPUCON',  'title' => 'Asesoría técnica',           'text' => 'Revisión de proyectos de terceros, segunda opinión profesional y peritajes estructurales.'],
+    ['num' => '10', 'brand' => 'INGEPUCON',  'title' => 'Regularizaciones',           'text' => 'Cálculo retroactivo y memoria para regularización de construcciones existentes ante la DOM.'],
+    ['num' => '11', 'brand' => 'INGEPUCON',  'title' => 'Patologías estructurales',   'text' => 'Inspección, diagnóstico e informe técnico sobre patologías y daños en estructuras existentes.'],
 ];
 
 render_head_open([
-    'title'       => 'Servicios — Alexis Bello · PROINCA · INGCON',
+    'title'       => 'Servicios — Alexis Bello · PROINCA · INGEPUCON',
     'description' => 'Catálogo completo de servicios de construcción e ingeniería estructural en La Araucanía.',
     'active'      => 'servicios',
 ]);
@@ -34,7 +34,7 @@ render_topbar_nav(['active' => 'servicios']);
   <div class="page-hero__inner" data-reveal>
     <nav class="page-hero__crumbs"><a href="/">Inicio</a> <span>/</span> <strong>Servicios</strong></nav>
     <h1>Servicios completos <em>de construcción e ingeniería.</em></h1>
-    <p>Once líneas de trabajo coordinadas, divididas entre PROINCA (construcción) e INGCON (ingeniería). Bajo el mismo criterio técnico.</p>
+    <p>Once líneas de trabajo coordinadas, divididas entre PROINCA (construcción) e INGEPUCON (ingeniería). Bajo el mismo criterio técnico.</p>
   </div>
 </header>
 

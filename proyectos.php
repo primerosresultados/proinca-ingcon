@@ -11,7 +11,7 @@ require __DIR__ . '/components/site_chrome.php';
 $projects = demo_projects();
 
 render_head_open([
-    'title'       => 'Proyectos — Alexis Bello · PROINCA · INGCON',
+    'title'       => 'Proyectos — Alexis Bello · PROINCA · INGEPUCON',
     'description' => 'Selección de obras y proyectos calculados por Alexis Bello en Pucón, Villarrica y La Araucanía.',
     'active'      => 'proyectos',
 ]);
@@ -22,7 +22,7 @@ render_topbar_nav(['active' => 'proyectos']);
   <div class="page-hero__inner" data-reveal>
     <nav class="page-hero__crumbs"><a href="/">Inicio</a> <span>/</span> <strong>Proyectos</strong></nav>
     <h1>Una selección de obras <em>y proyectos calculados.</em></h1>
-    <p>Una muestra del trabajo de PROINCA e INGCON en la zona lacustre y precordillerana de La Araucanía.</p>
+    <p>Una muestra del trabajo de PROINCA e INGEPUCON en la zona lacustre y precordillerana de La Araucanía.</p>
   </div>
 </header>
 
@@ -32,7 +32,7 @@ render_topbar_nav(['active' => 'proyectos']);
     <div class="pfilter" data-reveal>
       <button class="is-active" data-filter="all">Todos · <?= count($projects) ?></button>
       <button data-filter="PROINCA">PROINCA · Construcción</button>
-      <button data-filter="INGCON">INGCON · Ingeniería</button>
+      <button data-filter="INGEPUCON">INGEPUCON · Ingeniería</button>
     </div>
 
     <div class="pgrid" data-reveal id="projectsGrid">

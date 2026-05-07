@@ -4,7 +4,7 @@
  * Estilo: journal de obra — fotográfico, hands-on, terracota/dorado.
  */
 
-$siteName  = getSetting('site_name', 'Alexis Bello — PROINCA · INGCON');
+$siteName  = getSetting('site_name', 'Alexis Bello — PROINCA · INGEPUCON');
 $gaId      = trim((string) getSetting('ga_id', ''));
 $phone     = trim((string) getSetting('contact_phone', '+56 9 1234 5678'));
 $phoneRaw  = preg_replace('/[^0-9]/', '', $phone);
@@ -61,7 +61,7 @@ $error     = $error ?? '';
   <div class="nav__inner">
     <a href="/" class="nav__brand">
       <img src="/assets/img/logo.png" alt="">
-      <span>Alexis Bello<span class="nav__brand-sub">PROINCA · INGCON</span></span>
+      <span>Alexis Bello<span class="nav__brand-sub">PROINCA · INGEPUCON</span></span>
     </a>
     <ul class="nav__menu">
       <li><a href="/servicios.php">Servicios</a></li>
@@ -71,7 +71,7 @@ $error     = $error ?? '';
     </ul>
     <div class="nav__cta-wrap">
       <a href="/proinca.php" class="nav__brand-link nav__brand-link--proinca is-active">PROINCA</a>
-      <a href="/ingcon.php"  class="nav__brand-link nav__brand-link--ingcon">INGCON</a>
+      <a href="/ingepucon.php"  class="nav__brand-link nav__brand-link--ingcon">INGEPUCON</a>
       <button class="nav__toggle" id="navToggle"><i class="fa-solid fa-bars"></i></button>
     </div>
   </div>
@@ -319,14 +319,14 @@ $error     = $error ?? '';
         <p class="footer__brand-desc">Construcción y obra civil profesional en Pucón, Villarrica y La Araucanía.</p>
         <div class="footer__brand-tags">
           <span class="footer__brand-tag footer__brand-tag--proinca">PROINCA</span>
-          <span class="footer__brand-tag footer__brand-tag--ingcon">INGCON</span>
+          <span class="footer__brand-tag footer__brand-tag--ingcon">INGEPUCON</span>
         </div>
       </div>
       <div>
         <h4 class="footer__col-title">Marcas</h4>
         <ul class="footer__list">
           <li><a href="/proinca.php">PROINCA · Construcción</a></li>
-          <li><a href="/ingcon.php">INGCON · Ingeniería</a></li>
+          <li><a href="/ingepucon.php">INGEPUCON · Ingeniería</a></li>
         </ul>
       </div>
       <div>
@@ -349,7 +349,7 @@ $error     = $error ?? '';
   </div>
   <div class="footer__bottom">
     <div class="container footer__bottom-inner">
-      <span>© <span id="year">2026</span> Alexis Bello — PROINCA · INGCON.</span>
+      <span>© <span id="year">2026</span> Alexis Bello — PROINCA · INGEPUCON.</span>
       <span>Pucón · Villarrica · Región de La Araucanía · Chile</span>
     </div>
   </div>

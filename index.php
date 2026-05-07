@@ -134,7 +134,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && ($_POST['action'] ?? '') === 'submi
  * Settings / variables de presentación
  * ---------------------------------------------------------------- */
 $sent      = isset($_GET['sent']);
-$siteName  = getSetting('site_name', 'Alexis Bello — PROINCA · INGCON');
+$siteName  = getSetting('site_name', 'Alexis Bello — PROINCA · INGEPUCON');
 $gaId      = trim((string) getSetting('ga_id', ''));
 $pixelId   = trim((string) getSetting('pixel_id', ''));
 $phone     = trim((string) getSetting('contact_phone', '+56 9 1234 5678'));
@@ -148,8 +148,8 @@ $waUrl     = 'https://wa.me/' . $phoneRaw . '?text=' . $waText;
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<title>Alexis Bello · Ingeniero Civil Calculista — PROINCA · INGCON | Pucón · Villarrica</title>
-<meta name="description" content="Ingeniería estructural, cálculo y construcción profesional en Pucón, Villarrica y La Araucanía. PROINCA (construcción) e INGCON (ingeniería). Bajo norma chilena vigente.">
+<title>Alexis Bello · Ingeniero Civil Calculista — PROINCA · INGEPUCON | Pucón · Villarrica</title>
+<meta name="description" content="Ingeniería estructural, cálculo y construcción profesional en Pucón, Villarrica y La Araucanía. PROINCA (construcción) e INGEPUCON (ingeniería). Bajo norma chilena vigente.">
 <meta name="author" content="Alexis Bello">
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="https://<?= htmlspecialchars($_SERVER['HTTP_HOST'] ?? 'alexisbello.cl') ?>/">
@@ -157,7 +157,7 @@ $waUrl     = 'https://wa.me/' . $phoneRaw . '?text=' . $waText;
 <meta property="og:type" content="website">
 <meta property="og:locale" content="es_CL">
 <meta property="og:title" content="Alexis Bello — Ingeniería y Construcción · Pucón · Villarrica">
-<meta property="og:description" content="PROINCA · INGCON. Cálculo estructural, ingeniería de proyectos y construcción profesional en La Araucanía.">
+<meta property="og:description" content="PROINCA · INGEPUCON. Cálculo estructural, ingeniería de proyectos y construcción profesional en La Araucanía.">
 
 <link rel="icon" href="/assets/img/logo.png">
 
@@ -180,7 +180,7 @@ $waUrl     = 'https://wa.me/' . $phoneRaw . '?text=' . $waText;
 {
   "@context": "https://schema.org",
   "@type": "ProfessionalService",
-  "name": "Alexis Bello — PROINCA · INGCON",
+  "name": "Alexis Bello — PROINCA · INGEPUCON",
   "description": "Ingeniería estructural y construcción en Pucón, Villarrica y La Araucanía.",
   "areaServed": ["Pucón", "Villarrica", "La Araucanía", "Cunco", "Loncoche", "Freire"],
   "telephone": "<?= htmlspecialchars($phone) ?>",
@@ -213,7 +213,7 @@ $waUrl     = 'https://wa.me/' . $phoneRaw . '?text=' . $waText;
       <img src="/assets/img/logo.png" alt="">
       <span>
         Alexis Bello
-        <span class="nav__brand-sub">PROINCA · INGCON</span>
+        <span class="nav__brand-sub">PROINCA · INGEPUCON</span>
       </span>
     </a>
     <ul class="nav__menu">
@@ -224,7 +224,7 @@ $waUrl     = 'https://wa.me/' . $phoneRaw . '?text=' . $waText;
     </ul>
     <div class="nav__cta-wrap">
       <a href="/proinca.php" class="nav__brand-link nav__brand-link--proinca">PROINCA</a>
-      <a href="/ingcon.php"  class="nav__brand-link nav__brand-link--ingcon">INGCON</a>
+      <a href="/ingepucon.php"  class="nav__brand-link nav__brand-link--ingcon">INGEPUCON</a>
       <button class="nav__toggle" id="navToggle" aria-label="Abrir menú"><i class="fa-solid fa-bars"></i></button>
     </div>
   </div>
@@ -330,7 +330,7 @@ $waUrl     = 'https://wa.me/' . $phoneRaw . '?text=' . $waText;
       <div class="hero__brands">
         <span class="hero__brand-tag hero__brand-tag--proinca">PROINCA</span>
         <span>·</span>
-        <span class="hero__brand-tag hero__brand-tag--ingcon">INGCON</span>
+        <span class="hero__brand-tag hero__brand-tag--ingcon">INGEPUCON</span>
         <span class="mono" style="margin-left:6px; opacity:.6;">EST. 2014</span>
       </div>
 
@@ -440,7 +440,7 @@ $waUrl     = 'https://wa.me/' . $phoneRaw . '?text=' . $waText;
                   <option>Supervisión técnica</option>
                   <option>Remodelación / ampliación</option>
                 </optgroup>
-                <optgroup label="INGCON · Ingeniería">
+                <optgroup label="INGEPUCON · Ingeniería">
                   <option>Cálculo estructural</option>
                   <option>Ingeniería de proyecto</option>
                   <option>Asesoría técnica</option>
@@ -500,7 +500,7 @@ $waUrl     = 'https://wa.me/' . $phoneRaw . '?text=' . $waText;
         <span class="svc__card-num">01</span>
         <h3>Cálculo estructural</h3>
         <p>Diseño y cálculo de estructuras de hormigón armado, acero y madera bajo normativa chilena vigente. Memoria de cálculo y planos firmados.</p>
-        <span class="svc__card-tag svc__card-tag--ingcon"><span class="dot"></span> INGCON</span>
+        <span class="svc__card-tag svc__card-tag--ingcon"><span class="dot"></span> INGEPUCON</span>
       </article>
 
       <article class="svc__card svc__card--m">
@@ -514,7 +514,7 @@ $waUrl     = 'https://wa.me/' . $phoneRaw . '?text=' . $waText;
         <span class="svc__card-num">03</span>
         <h3>Ingeniería de proyectos</h3>
         <p>Coordinación multidisciplinaria desde anteproyecto hasta entrega.</p>
-        <span class="svc__card-tag svc__card-tag--both"><span class="dot"></span> PROINCA · INGCON</span>
+        <span class="svc__card-tag svc__card-tag--both"><span class="dot"></span> PROINCA · INGEPUCON</span>
       </article>
 
       <article class="svc__card svc__card--m">
@@ -528,21 +528,21 @@ $waUrl     = 'https://wa.me/' . $phoneRaw . '?text=' . $waText;
         <span class="svc__card-num">05</span>
         <h3>Regularizaciones</h3>
         <p>Gestión completa ante la DOM, subsanación de observaciones y permisos.</p>
-        <span class="svc__card-tag svc__card-tag--both"><span class="dot"></span> PROINCA · INGCON</span>
+        <span class="svc__card-tag svc__card-tag--both"><span class="dot"></span> PROINCA · INGEPUCON</span>
       </article>
 
       <article class="svc__card svc__card--m">
         <span class="svc__card-num">06</span>
         <h3>Asesoría técnica</h3>
         <p>Revisión de proyectos, peritajes y segundas opiniones profesionales.</p>
-        <span class="svc__card-tag svc__card-tag--ingcon"><span class="dot"></span> INGCON</span>
+        <span class="svc__card-tag svc__card-tag--ingcon"><span class="dot"></span> INGEPUCON</span>
       </article>
 
       <article class="svc__card svc__card--m">
         <span class="svc__card-num">07</span>
         <h3>Patologías estructurales</h3>
         <p>Diagnóstico, peritaje e informe técnico sobre daños y patologías en estructuras existentes.</p>
-        <span class="svc__card-tag svc__card-tag--ingcon"><span class="dot"></span> INGCON</span>
+        <span class="svc__card-tag svc__card-tag--ingcon"><span class="dot"></span> INGEPUCON</span>
       </article>
 
       <article class="svc__card svc__card--m">
@@ -599,12 +599,12 @@ $waUrl     = 'https://wa.me/' . $phoneRaw . '?text=' . $waText;
 
     <article class="brand-card brand-card--ingcon" data-reveal>
       <div class="brand-card__media">
-        <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&q=85&auto=format&fit=crop" alt="Ingeniería INGCON" loading="lazy">
+        <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&q=85&auto=format&fit=crop" alt="Ingeniería INGEPUCON" loading="lazy">
         <span class="brand-card__badge">Ingeniería</span>
         <span class="brand-card__num">02</span>
       </div>
       <div class="brand-card__body">
-        <h3 class="brand-card__name">INGCON</h3>
+        <h3 class="brand-card__name">INGEPUCON</h3>
         <p class="brand-card__tagline">Cálculo · Diseño · Certeza Técnica</p>
         <p class="brand-card__text">
           Línea de ingeniería y cálculo estructural. Proyectos técnicos, cálculos y
@@ -617,8 +617,8 @@ $waUrl     = 'https://wa.me/' . $phoneRaw . '?text=' . $waText;
           <li>Asesoría técnica</li>
           <li>Regularizaciones</li>
         </ul>
-        <a href="/ingcon.php" class="brand-card__cta">
-          Ver INGCON <i class="fa-solid fa-arrow-right"></i>
+        <a href="/ingepucon.php" class="brand-card__cta">
+          Ver INGEPUCON <i class="fa-solid fa-arrow-right"></i>
         </a>
       </div>
     </article>
@@ -730,7 +730,7 @@ $waUrl     = 'https://wa.me/' . $phoneRaw . '?text=' . $waText;
         </details>
         <details class="faq__item">
           <summary>¿Entregan memoria de cálculo y planos firmados?</summary>
-          <div class="faq__item-body">Sí. Todos los proyectos de INGCON se entregan con memoria de cálculo conforme a NCh 433/430/427/2369 y planos firmados por el calculista.</div>
+          <div class="faq__item-body">Sí. Todos los proyectos de INGEPUCON se entregan con memoria de cálculo conforme a NCh 433/430/427/2369 y planos firmados por el calculista.</div>
         </details>
         <details class="faq__item">
           <summary>¿Coordinan con mi arquitecto/a?</summary>
@@ -839,7 +839,7 @@ $waUrl     = 'https://wa.me/' . $phoneRaw . '?text=' . $waText;
                   <option>Supervisión técnica</option>
                   <option>Remodelación / ampliación</option>
                 </optgroup>
-                <optgroup label="INGCON · Ingeniería">
+                <optgroup label="INGEPUCON · Ingeniería">
                   <option>Cálculo estructural</option>
                   <option>Ingeniería de proyecto</option>
                   <option>Asesoría técnica</option>
@@ -879,7 +879,7 @@ $waUrl     = 'https://wa.me/' . $phoneRaw . '?text=' . $waText;
         </p>
         <div class="footer__brand-tags">
           <span class="footer__brand-tag footer__brand-tag--proinca">PROINCA</span>
-          <span class="footer__brand-tag footer__brand-tag--ingcon">INGCON</span>
+          <span class="footer__brand-tag footer__brand-tag--ingcon">INGEPUCON</span>
         </div>
       </div>
       <div>
@@ -915,7 +915,7 @@ $waUrl     = 'https://wa.me/' . $phoneRaw . '?text=' . $waText;
 
   <div class="footer__bottom">
     <div class="container footer__bottom-inner">
-      <span>© <span id="year">2026</span> Alexis Bello — PROINCA · INGCON. Todos los derechos reservados.</span>
+      <span>© <span id="year">2026</span> Alexis Bello — PROINCA · INGEPUCON. Todos los derechos reservados.</span>
       <span>Pucón · Villarrica · Región de La Araucanía · Chile</span>
     </div>
   </div>

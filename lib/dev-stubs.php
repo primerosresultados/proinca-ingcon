@@ -11,7 +11,7 @@ if (!function_exists('csrfToken')) {
 
     function getSetting(string $k, ?string $d = null): ?string {
         $map = [
-            'site_name'     => 'Alexis Bello — PROINCA · INGCON',
+            'site_name'     => 'Alexis Bello — PROINCA · INGEPUCON',
             'contact_phone' => '+56 9 1234 5678',
             'contact_email' => 'contacto@alexisbello.cl',
         ];

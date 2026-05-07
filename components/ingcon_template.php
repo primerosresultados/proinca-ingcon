@@ -1,15 +1,15 @@
 <?php
 /**
- * INGCON — template de página de marca.
+ * INGEPUCON — template de página de marca.
  * Estilo: spec sheet técnico — blueprint, datos, secciones numeradas ISO.
  */
 
-$siteName  = getSetting('site_name', 'Alexis Bello — PROINCA · INGCON');
+$siteName  = getSetting('site_name', 'Alexis Bello — PROINCA · INGEPUCON');
 $gaId      = trim((string) getSetting('ga_id', ''));
 $phone     = trim((string) getSetting('contact_phone', '+56 9 1234 5678'));
 $phoneRaw  = preg_replace('/[^0-9]/', '', $phone);
 $email     = trim((string) getSetting('contact_email', 'contacto@alexisbello.cl'));
-$waText    = rawurlencode("Hola, me interesa consultar a INGCON sobre cálculo / ingeniería estructural. ¿Podríamos conversar?");
+$waText    = rawurlencode("Hola, me interesa consultar a INGEPUCON sobre cálculo / ingeniería estructural. ¿Podríamos conversar?");
 $waUrl     = 'https://wa.me/' . $phoneRaw . '?text=' . $waText;
 $sent      = isset($_GET['sent']);
 $error     = $error ?? '';
@@ -19,12 +19,12 @@ $error     = $error ?? '';
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<title>INGCON · Ingeniería Estructural — Alexis Bello | Pucón · Villarrica</title>
+<title>INGEPUCON · Ingeniería Estructural — Alexis Bello | Pucón · Villarrica</title>
 <meta name="description" content="<?= htmlspecialchars($brand['description']) ?>">
 <meta name="robots" content="index, follow">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="es_CL">
-<meta property="og:title" content="INGCON — Ingeniería Estructural · Pucón · Villarrica">
+<meta property="og:title" content="INGEPUCON — Ingeniería Estructural · Pucón · Villarrica">
 <meta property="og:description" content="<?= htmlspecialchars($brand['description']) ?>">
 
 <link rel="icon" href="/assets/img/logo.png">
@@ -61,7 +61,7 @@ $error     = $error ?? '';
   <div class="nav__inner">
     <a href="/" class="nav__brand">
       <img src="/assets/img/logo.png" alt="">
-      <span>Alexis Bello<span class="nav__brand-sub">PROINCA · INGCON</span></span>
+      <span>Alexis Bello<span class="nav__brand-sub">PROINCA · INGEPUCON</span></span>
     </a>
     <ul class="nav__menu">
       <li><a href="/servicios.php">Servicios</a></li>
@@ -71,7 +71,7 @@ $error     = $error ?? '';
     </ul>
     <div class="nav__cta-wrap">
       <a href="/proinca.php" class="nav__brand-link nav__brand-link--proinca">PROINCA</a>
-      <a href="/ingcon.php"  class="nav__brand-link nav__brand-link--ingcon is-active">INGCON</a>
+      <a href="/ingepucon.php"  class="nav__brand-link nav__brand-link--ingcon is-active">INGEPUCON</a>
       <button class="nav__toggle" id="navToggle"><i class="fa-solid fa-bars"></i></button>
     </div>
   </div>
@@ -82,12 +82,12 @@ $error     = $error ?? '';
   <div class="container icover__inner">
     <div data-reveal>
       <div class="icover__spec">
-        <span><strong>DOC</strong> 02-INGCON</span>
+        <span><strong>DOC</strong> 02-INGEPUCON</span>
         <span><strong>REV</strong> 2026·A</span>
         <span><strong>ISSUE</strong> Pucón · La Araucanía · CL</span>
       </div>
       <span class="icover__sub">02 · Ingeniería estructural</span>
-      <h1 class="icover__name">INGCON</h1>
+      <h1 class="icover__name">INGEPUCON</h1>
       <p class="icover__tagline"><?= htmlspecialchars($brand['tagline']) ?></p>
 
       <div class="icover__data">
@@ -119,7 +119,7 @@ $error     = $error ?? '';
         </div>
       <?php else: ?>
         <span class="eyebrow" style="color:var(--ink);">Solicitud técnica</span>
-        <h3 style="margin:6px 0 4px; font-size:22px;">Consultar a INGCON.</h3>
+        <h3 style="margin:6px 0 4px; font-size:22px;">Consultar a INGEPUCON.</h3>
         <p style="color:var(--muted); font-size:13.5px; margin-bottom:20px;">
           Respuesta en menos de 24 h hábiles · Evaluación inicial sin costo.
         </p>
@@ -255,7 +255,7 @@ $error     = $error ?? '';
 <section class="isection iwhy">
   <div class="container">
     <div class="ihead" data-reveal>
-      <div class="ihead__num">§ 03 · Por qué INGCON</div>
+      <div class="ihead__num">§ 03 · Por qué INGEPUCON</div>
       <h2 class="ihead__title"><?= $brand['why_title'] ?></h2>
     </div>
     <div class="iwhy__grid" data-reveal>
@@ -351,14 +351,14 @@ $error     = $error ?? '';
         <p class="footer__brand-desc">Cálculo estructural e ingeniería de proyectos en Pucón, Villarrica y La Araucanía. Bajo norma chilena vigente.</p>
         <div class="footer__brand-tags">
           <span class="footer__brand-tag footer__brand-tag--proinca">PROINCA</span>
-          <span class="footer__brand-tag footer__brand-tag--ingcon">INGCON</span>
+          <span class="footer__brand-tag footer__brand-tag--ingcon">INGEPUCON</span>
         </div>
       </div>
       <div>
         <h4 class="footer__col-title">Marcas</h4>
         <ul class="footer__list">
           <li><a href="/proinca.php">PROINCA · Construcción</a></li>
-          <li><a href="/ingcon.php">INGCON · Ingeniería</a></li>
+          <li><a href="/ingepucon.php">INGEPUCON · Ingeniería</a></li>
         </ul>
       </div>
       <div>
@@ -381,7 +381,7 @@ $error     = $error ?? '';
   </div>
   <div class="footer__bottom">
     <div class="container footer__bottom-inner">
-      <span>© <span id="year">2026</span> Alexis Bello — PROINCA · INGCON.</span>
+      <span>© <span id="year">2026</span> Alexis Bello — PROINCA · INGEPUCON.</span>
       <span>Pucón · Villarrica · Región de La Araucanía · Chile</span>
     </div>
   </div>

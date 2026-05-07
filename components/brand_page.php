@@ -1,6 +1,6 @@
 <?php
 /**
- * Template de página de marca (PROINCA / INGCON).
+ * Template de página de marca (PROINCA / INGEPUCON).
  * Espera $brand con: key, name, kind, tagline, accent, eyebrow, hero_bg,
  *   chips[], description, services[{title, text}], projects[{title, type, img}].
  *
@@ -8,7 +8,7 @@
  * Se incluye desde proinca.php / ingcon.php que también delegan al handler.
  */
 
-$siteName  = getSetting('site_name', 'Alexis Bello — PROINCA · INGCON');
+$siteName  = getSetting('site_name', 'Alexis Bello — PROINCA · INGEPUCON');
 $gaId      = trim((string) getSetting('ga_id', ''));
 $pixelId   = trim((string) getSetting('pixel_id', ''));
 $phone     = trim((string) getSetting('contact_phone', '+56 9 1234 5678'));
@@ -75,13 +75,13 @@ $error     = $error ?? '';
       <img src="/assets/img/logo.png" alt="">
       <span>
         Alexis Bello
-        <span class="nav__brand-sub">PROINCA · INGCON</span>
+        <span class="nav__brand-sub">PROINCA · INGEPUCON</span>
       </span>
     </a>
     <ul class="nav__menu">
       <li><a href="/#servicios">Servicios</a></li>
       <li><a href="/proinca.php" <?= $brand['key'] === 'proinca' ? 'style="color:var(--ink)"' : '' ?>>PROINCA</a></li>
-      <li><a href="/ingcon.php" <?= $brand['key'] === 'ingcon' ? 'style="color:var(--ink)"' : '' ?>>INGCON</a></li>
+      <li><a href="/ingepucon.php" <?= $brand['key'] === 'ingcon' ? 'style="color:var(--ink)"' : '' ?>>INGEPUCON</a></li>
       <li><a href="/#proceso">Proceso</a></li>
       <li><a href="/#cobertura">Cobertura</a></li>
     </ul>
@@ -370,14 +370,14 @@ $error     = $error ?? '';
         <p class="footer__brand-desc">Ingeniería estructural y construcción profesional en Pucón, Villarrica y La Araucanía.</p>
         <div class="footer__brand-tags">
           <span class="footer__brand-tag footer__brand-tag--proinca">PROINCA</span>
-          <span class="footer__brand-tag footer__brand-tag--ingcon">INGCON</span>
+          <span class="footer__brand-tag footer__brand-tag--ingcon">INGEPUCON</span>
         </div>
       </div>
       <div>
         <h4 class="footer__col-title">Marcas</h4>
         <ul class="footer__list">
           <li><a href="/proinca.php">PROINCA · Construcción</a></li>
-          <li><a href="/ingcon.php">INGCON · Ingeniería</a></li>
+          <li><a href="/ingepucon.php">INGEPUCON · Ingeniería</a></li>
         </ul>
       </div>
       <div>
@@ -401,7 +401,7 @@ $error     = $error ?? '';
   </div>
   <div class="footer__bottom">
     <div class="container footer__bottom-inner">
-      <span>© <span id="year">2026</span> Alexis Bello — PROINCA · INGCON.</span>
+      <span>© <span id="year">2026</span> Alexis Bello — PROINCA · INGEPUCON.</span>
       <span>Pucón · Villarrica · Región de La Araucanía · Chile</span>
     </div>
   </div>

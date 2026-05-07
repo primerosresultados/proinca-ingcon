@@ -21,7 +21,7 @@ $zones = [
 ];
 
 render_head_open([
-    'title'       => 'Cobertura — Alexis Bello · PROINCA · INGCON',
+    'title'       => 'Cobertura — Alexis Bello · PROINCA · INGEPUCON',
     'description' => 'Zonas de cobertura: Pucón, Villarrica y toda La Araucanía. Conocimiento del territorio, suelos y normativa local.',
     'active'      => 'cobertura',
 ]);

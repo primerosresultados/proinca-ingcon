@@ -1,5 +1,5 @@
 /* ============================================================
-   Alexis Bello · PROINCA · INGCON
+   Alexis Bello · PROINCA · INGEPUCON
    Modern · technical · architectural — fully sans-serif
    ============================================================ */
 
@@ -1269,7 +1269,7 @@ em { font-style: italic; color: var(--muted); font-weight: 500; }
 
 /* ============================================================
    ===========================================================
-   INGCON — "Spec sheet" : technical, blueprint, structured
+   INGEPUCON — "Spec sheet" : technical, blueprint, structured
    ===========================================================
 ============================================================ */
 .bp-ingcon { background: #F4F6FA; color: var(--ink); }
@@ -1500,7 +1500,7 @@ em { font-style: italic; color: var(--muted); font-weight: 500; }
 .bp-ingcon .iproj h3 { font-size: 19px; font-weight: 600; letter-spacing: -.015em; margin-bottom: 8px; }
 .bp-ingcon .iproj p { color: var(--ink-soft); font-size: 14px; }
 
-/* Why INGCON — diagrammatic checklist */
+/* Why INGEPUCON — diagrammatic checklist */
 .bp-ingcon .iwhy { background: var(--paper-2); }
 .bp-ingcon .iwhy__grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
 @media (max-width: 800px) { .bp-ingcon .iwhy__grid { grid-template-columns: 1fr; } }

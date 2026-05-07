@@ -22,7 +22,7 @@ $waUrl    = $s['waUrl'];
 $sent     = isset($_GET['sent']);
 
 render_head_open([
-    'title'       => 'Contacto — Alexis Bello · PROINCA · INGCON',
+    'title'       => 'Contacto — Alexis Bello · PROINCA · INGEPUCON',
     'description' => 'Cuéntanos sobre tu proyecto. Evaluación inicial sin costo, respuesta en menos de 24h hábiles.',
     'active'      => 'contacto',
 ]);
@@ -123,7 +123,7 @@ render_topbar_nav(['active' => 'contacto']);
                   <option>Supervisión técnica</option>
                   <option>Remodelación / ampliación</option>
                 </optgroup>
-                <optgroup label="INGCON · Ingeniería">
+                <optgroup label="INGEPUCON · Ingeniería">
                   <option>Cálculo estructural</option>
                   <option>Ingeniería de proyecto</option>
                   <option>Asesoría técnica</option>

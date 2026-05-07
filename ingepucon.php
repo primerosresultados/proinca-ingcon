@@ -1,6 +1,6 @@
 <?php
 
-// INGCON — página de marca. Usa el handler POST de index.php para leads.
+// INGEPUCON — página de marca. Usa el handler POST de index.php para leads.
 if (getenv('DEV_PREVIEW') === '1') {
     require __DIR__ . '/lib/dev-stubs.php';
 } else {
@@ -15,11 +15,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && ($_POST['action'] ?? '') === 'submi
 
 $brand = [
     'key'             => 'ingcon',
-    'name'            => 'INGCON',
+    'name'            => 'INGEPUCON',
     'kind'            => 'Ingeniería',
     'eyebrow'         => '02 — Ingeniería',
     'tagline'         => 'Línea de ingeniería y cálculo estructural. Proyectos técnicos, cálculos y asesorías especializadas para arquitectos, constructoras y propietarios — bajo norma chilena vigente.',
-    'description'     => 'INGCON — línea de ingeniería estructural de Alexis Bello. Cálculo de hormigón armado, acero y madera bajo NCh 433/430/427/2369 en La Araucanía.',
+    'description'     => 'INGEPUCON — línea de ingeniería estructural de Alexis Bello. Cálculo de hormigón armado, acero y madera bajo NCh 433/430/427/2369 en La Araucanía.',
     'accent'          => '#1F3556',
     'accent_dk'       => '#14233B',
     'hero_bg'         => 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1800&q=85&auto=format&fit=crop',
@@ -42,7 +42,7 @@ $brand = [
         ['title' => 'Regularización vivienda', 'type' => 'Regularización',       'text' => 'Cálculo retroactivo y memoria para regularización ante DOM Pucón. Aprobado a primera vuelta.', 'img' => 'https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=1200&q=85&auto=format&fit=crop'],
     ],
 
-    'why_title'       => '¿Por qué <em>INGCON?</em>',
+    'why_title'       => '¿Por qué <em>INGEPUCON?</em>',
     'why'             => [
         ['title' => 'Bajo norma vigente', 'text' => 'NCh 433, 430, 427 y 2369. Sin atajos. Sin interpretaciones libres.'],
         ['title' => 'Trato directo',      'text' => 'Hablás con el calculista, no con un intermediario. Respuestas técnicas reales.'],
